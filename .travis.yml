@@ -13,6 +13,9 @@ services:
 git:
   submodules: false
 
+before_install:
+  - sudo apt-get -y install python-setuptools
+
 jobs:
   include:
   - stage: Ubuntu Container
